@@ -1,7 +1,7 @@
-### Blink LEDs with ARM assembly on STM32F4
-This repository contains code written in ARM (V7-M) assembly to blink LEDs on the STM32F4 discovery board.
+### How to use ARM Cortex-M SysTick timer to blink LEDs on STM32F4 Discovery board
+This repository contains code written in ARM (V7-M) assembly to blink LEDs on the STM32F4 discovery board. It uses the SysTick timer provided in ARM Cortex-M core.
 
-For detailed explanation of the code, refer blog post - [https://iotality.com/stm32f4-blink](https://iotality.com/stm32f4-blink)
+For detailed explanation of the code, refer blog post - [https://iotality.com/armcm-systick-timer](https://iotality.com/armcm-systick-timer)
 
 This code uses ARM assembler and not the GNU assembler. Source code is contained in this repository in the [src](/src). The project files (for Keil uVision IDE) are in the [mdk-arm](/mdk-arm) folder.
 
@@ -27,7 +27,9 @@ This README contains instructions to build and download the code to STM32F4 disc
 
 #### Steps
 
-Follow the steps below to open the project and see yourself the LEDs blinking on STM32F4 Discovery board.
+Clone this repository and then follow the steps below to open the project and see yourself the LEDs blinking on STM32F4 Discovery board.
+
+If you already have Keil MDK-ARM and STM32F4 software pack  installed then you can skip directly to step 3.
 
 ##### Step 1
 
@@ -37,13 +39,12 @@ Launch Keil uVision IDE. From the 'Project' menu click on 'Open Project' and sel
 
 ![STM32F4 software pack](images/keil-4.png)
 
+![STM32F4 software pack](images/keil-5.png)
+
 
 ##### Step 2
 
-
-![STM32F4 software pack](images/keil-5.png)
-
-The 'Books' tab shows useful documents and resources. In particular the STM32F40x Reference manual, STM32F407 Datasheet and STM32F4-Discovery user manual come handy to understand and write assembly code.
+The 'Books' tab shows useful documents and resources. In particular the STM32F40x Reference manual, STM32F407 Datasheet, STM32F4-Discovery user manual and ARM Cortex-M4 generic user guide come handy to understand and write assembly code.
 
 ![STM32F4 software pack](images/keil-6.png)
 
@@ -78,4 +79,4 @@ Your board should be flashing all the 4 LEDs at 500msec interval.
 
 ##### Step 6
 
-You are done. Head on to the blog post [https://iotality.com/stm32f4-blink](https://iotality.com/stm32f4-blink) to learn more about coding in ARM assembly.
+You are done. Head on to the blog post [https://iotality.com/armcm-systick-timer](https://iotality.com/armcm-systick-timer) to learn more about coding in ARM assembly.
